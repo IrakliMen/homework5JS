@@ -1,0 +1,44 @@
+.button {
+    padding: 4px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: aqua;
+    cursor: pointer;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+}
+.header_ul {
+    display: flex;
+    gap: 20px;
+}
+a, .text, .button {
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+
+
+
+@media (max-width: 1025px) {
+    .burger {
+        display: block;
+    }
+    .nav_header {
+        margin-left: -100%;
+        background-color: #05BCCA;
+        width: 200px;
+        padding: 16px;
+        transition: .5s linear;
+    }
+    .header_ul {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+    .show {
+        margin-left: 0;
+    }
+}
